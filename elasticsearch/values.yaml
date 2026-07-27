@@ -196,6 +196,8 @@ service:
   loadBalancerIP: ""
   loadBalancerSourceRanges: []
   externalTrafficPolicy: ""
+  # Optional Service.spec.trafficDistribution (e.g. PreferSameZone); requires k8s >= 1.33
+  trafficDistribution: ""
 
 updateStrategy: RollingUpdate
 
